@@ -1,0 +1,39 @@
+/* Silck Slider Styles */
+
+.slick-dots li button:before {
+  font-size: 15px !important;
+  color: #eee !important;
+}
+
+.slick-dots li.slick-active button:before {
+  color: white !important;
+}
+
+.slick-dots {
+  bottom: -35px !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black !important;
+}
+
+/* Nprogress Style */
+
+#nprogress {
+  pointer-events: none;
+}
+
+#nprogress .bar {
+  background: #ff5c00;
+
+  position: fixed;
+  z-index: 1031;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 5px;
+}
+
+/* Fancy blur effect */

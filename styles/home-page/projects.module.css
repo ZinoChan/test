@@ -1,0 +1,20 @@
+.about::after,
+.about::before {
+  content: "";
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  z-index: -1;
+}
+
+.about::after {
+  background-color: rgba(245, 71, 72, 0.25);
+  top: -20px;
+  right: -20px;
+}
+
+.about::before {
+  background-color: rgba(251, 147, 0, 0.25);
+  bottom: -20px;
+  left: -20px;
+}

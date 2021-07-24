@@ -1,0 +1,4 @@
+.client:hover .clientBox {
+  opacity: 1 !important;
+  margin-top: 2px !important;
+}

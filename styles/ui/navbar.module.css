@@ -1,0 +1,28 @@
+.navLink::after,
+.navLinkMobile::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  left: 0;
+  transition: all 0.2s linear;
+}
+
+.navLink::after {
+  background: red;
+}
+
+.navLinkMobile::after {
+  background: black;
+}
+
+.navLink:hover::after,
+.navLinkMobile:hover::after,
+.active::after {
+  width: 70%;
+}
+
+.active {
+  font-weight: 600;
+}
