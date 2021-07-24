@@ -17,7 +17,7 @@ const Navbar = ({ light = false, primary=false, cta = false, navCenter = false }
     { name: "about", route: "/about" },
     { name: "projects", route: "/projects" },
     { name: "contact", route: "/contact" },
-    { name: "login", route: "/login" },
+    { name: "privacy", route: "/privacy" },
   ];
 
   return (
