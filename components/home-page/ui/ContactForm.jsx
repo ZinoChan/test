@@ -91,13 +91,13 @@ const ContactForm = () => {
             ></textarea>
           </motion.div>
         </ScrollReveal>
-        <ScrollReveal variants={slideUp}>
-          <button
+        <ScrollReveal variants={list}>
+          <motion.button variants={slideUp}
             type="submit"
             className="rounded-full font-main font-semibold bg-white px-6 py-2"
           >
             Send
-          </button>
+          </motion.button>
         </ScrollReveal>
       </form>
     </div>

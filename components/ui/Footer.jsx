@@ -79,7 +79,7 @@ const Footer = () => {
               <span>+977-981234567</span>
             </p>
             <p className="font-secondary font-light flex space-x-2 items-center mb-3 text-lg">
-              <span className="inline-block w-4 h-4">
+              <span className="inline-block w-6 h-6">
                 <FontAwesomeIcon icon={faMapMarkerAlt} />
               </span>
               <span>760 Market Street, floor 10 San Francisco, CA, 94102</span>
