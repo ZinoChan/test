@@ -29,11 +29,12 @@ const Navbar = ({ light = false, primary=false, cta = false, navCenter = false }
       className="absolute top-0 z-40 w-full py-4"
     >
       <nav
-        className={`flex items-center ${
-          navCenter ? "justify-center" : "justify-end"
-        } max-w-screen-xl mx-auto px-10`}
+        className={`flex items-center justify-between max-w-screen-xl mx-auto px-10`}
       >
-        <div className="md:hidden absolute right-4 top-4 z-40">
+        <div className="relative z-40">
+          <h1 className={`font-main font-bold  text-2xl ${isOpen ? 'text-white' : 'text-primary'}`}>Logo</h1>
+        </div>
+        <div className="md:hidden absolute right-4 top-3 z-40">
           <Hamburger
             toggled={isOpen}
             toggle={setOpen}
@@ -41,7 +42,9 @@ const Navbar = ({ light = false, primary=false, cta = false, navCenter = false }
           />
         </div>
         <ul
-          className={`md:flex hidden items-center space-x-4 ${
+          className={`md:flex hidden items-center space-x-4  ${
+            navCenter ? "justify-self-center" : "justify-self-end"
+          } ${
             light ? "text-white" : primary ? 'text-primary' : "text-black"
           } `}
         >
